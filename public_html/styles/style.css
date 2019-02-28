@@ -1,0 +1,365 @@
+html, body {
+	margin: 0;
+	background: linear-gradient(45deg, #288fa0, #6a3c82) fixed;
+	font-weight: 100;
+	letter-spacing: 1px;
+	padding: 0;
+	font-family: "Source Sans Pro", sans-serif;
+}
+
+#header {
+	background-color: rgba(0, 0, 0, 1);
+	color: white;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100px;
+	padding: 0;
+	margin: 0;
+	z-index: 1;
+}
+
+/*tables have uniform positioning*/
+.container {
+	position: absolute;
+	top: 20%;
+	left: 43.750em;
+	transform: translate(-50%);
+}
+
+table {
+	border-radius: 5px;
+	width: 31.250em;
+	border-collapse: collapse;
+	overflow: hidden;
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+td {
+	padding: 5px;
+	text-align: center;
+	position: relative;
+	background-color: rgba(255, 255, 255, 0.2);
+	color: #fff;
+}
+
+th {
+	font-size: 20px;
+	text-align: center;
+	color: #fff;
+	background-color: #55608f;
+}
+
+tr:hover {
+	background-color: rgba(255, 255, 255, 0.3);
+}
+
+td:hover:before {
+	content: "";
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: -9999px;
+	bottom: -9999px;
+	background-color: rgba(255, 255, 255, 0.2);
+	z-index: -1;
+}
+
+input[type=checkbox] {
+	transform: scale(1.5);
+}
+
+.bookingForm{
+	margin-bottom: 5px;
+	display: block;
+	position: fixed;
+	text-align: center;
+}
+
+a.myButton {
+	background: #F5F0FF;
+	color: #644cad;
+	text-decoration: none;
+	transition: 0.3s ease all;
+}
+
+/* input box for email */
+.emailText{
+	background: #6a3c82;
+	width: 91%;
+	border-radius: 2em;
+	border: none;
+	padding: 0.8em;
+	color: #f0ffff;
+	outline: none;
+	box-shadow: 0 4px 6px -5px hsl(180, 100%, 97%), inset 0 4px 6px -5px black;
+}
+
+/*navigation buttons beside tables */
+.myButton {
+	background: #F5F0FF;
+	color: #644cad;
+	text-decoration: none;
+	transition: 0.3s ease all;
+	font-size: 15px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	display: block;
+	width: 100%;
+	white-space: nowrap;
+	text-align: center;
+	font-weight: bold;
+	padding: 5px 5px;
+	border: 3px solid #644cad;
+	border-radius: 2px;
+	position: relative;
+	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.1);
+	z-index: 2;
+}
+
+
+.myBookingButton {
+	background: #F5F0FF;
+	color: #644cad;
+	text-decoration: none;
+	transition: 0.3s ease all;
+	font-size: 15px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	display: inline-block;
+	width: 100%;
+	white-space: nowrap;
+	text-align: center;
+	font-weight: bold;
+	padding: 5px 5px;
+	border: 3px solid #644cad;
+	border-radius: 2px;
+	position: relative;
+	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.1);
+	z-index: 2;
+}
+
+.myBookingButton {
+	background: #F5F0FF;
+	color: #644cad;
+	text-decoration: none;
+	transition: 0.3s ease all;
+	font-size: 15px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	display: inline-block;
+	width: 100%;
+	white-space: nowrap;
+	text-align: center;
+	font-weight: bold;
+	padding: 5px 5px;
+	border: 3px solid #644cad;
+	border-radius: 2px;
+	position: relative;
+	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.1);
+	z-index: 2;
+}
+
+.errorBookingButton {
+	background: #F5F0FF;
+	color: #644cad;
+	text-decoration: none;
+	transition: 0.3s ease all;
+	font-size: 15px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	display: inline-block;
+	width: 97%;
+	white-space: nowrap;
+	text-align: center;
+	font-weight: bold;
+	padding: 5px 5px;
+	border: 3px solid #644cad;
+	border-radius: 2px;
+	position: center;
+	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.1);
+	z-index: 2;
+}
+
+.myButton:hover, .errorBookingButton:hover, .myBookingButton:hover{
+	background-color: #439da0;
+	transition: 0.5s all ease;
+	left: 0;
+	right: 0;
+	opacity: 1;
+}
+
+.uiInput{
+	font-weight: bold;
+}
+
+/*uniform headers only adjusting the size of each*/
+h1.headers {
+	left: 10px;
+	top: 0;
+	font-size: 3em;
+	padding: 0;
+	font-weight: 200;
+	letter-spacing: .01em;
+	text-shadow: .04em .04em .04em #111;
+	color: #fff;
+	position: fixed;
+	z-index:1;
+}
+
+h2.headers {
+	font-size: 2em;
+	font-weight: 200;
+	letter-spacing: .01em;
+	text-shadow: .04em .04em .04em #111;
+	color: #fff;
+}
+
+h3.headers {
+	font-size: 1em;
+	font-weight: 200;
+	letter-spacing: .01em;
+	text-shadow: .04em .04em .04em #111;
+	color: #fff;
+}
+
+h4.headers {
+	font-size: 0.75em;
+	font-weight: 200;
+	letter-spacing: .01em;
+	text-shadow: .04em .04em .04em #111;
+	color: #fff;
+}
+
+.performanceLabels{
+	font-size: 30px;
+	font-weight: 400;
+	line-height: 2;
+	text-shadow: 1px 1px 1px #000;
+	margin-bottom: 1.5em;
+	color: #6a3c82;
+}
+
+/*nav bar */
+ul {
+	top: 10%;
+	z-index: 1;
+	position: fixed;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	overflow: hidden;
+	background-color: #000;
+}
+
+li {
+	position: sticky;
+	display: inline;
+	float: left;
+	border-right: 1px solid #bbb;
+}
+
+/* last navigation link on nav-bar has no divider to the right */
+li:last-child{
+	border-right: none;
+}
+
+li a:hover {
+	background-color: #111;
+}
+
+/*navigation bar with links*/
+.navigation {
+	color: #ffffff;
+	text-decoration: none;
+	transition: 0.3s ease all;
+	padding: 5px;
+	font-size: 15px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	display: inline-block;
+	white-space: nowrap;
+	text-align: center;
+	font-weight: bold;
+	border-radius: 5px;
+	position: sticky;
+	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.1);
+	z-index: 2;
+}
+
+.navigation:hover{
+	background-color: #439da0;
+	transition: 0.5s all ease;
+	opacity: 1;
+}
+
+
+/*text information across the website*/
+label.information, p.information{
+	font-size: calc(1em + .25vw);
+	font-weight: 400;
+	line-height: 2;
+	margin-bottom: 1.5em;
+	color: #fcfcfc;
+	text-shadow: .04em .04em .04em #111;
+}
+
+.errorInfo {
+	font-size: calc(1em + .25vw);
+	font-weight: 400;
+	line-height: 2;
+	margin-bottom: 0.5em;
+	color: #ad9ca2;
+}
+
+/*performance selection information scrolls with page */
+.bookingHeaders {
+	position: fixed;
+	top: 20%;
+	left: 4em;
+	width: 17em;
+	border: 3px solid #fcfcfc;
+	padding: 10px;
+	border-radius: 6px;
+}
+
+/*Book and check buttons scroll with the page*/
+.bookingDialog {
+ position: fixed;
+ top: 60%;
+ left: 4em;
+ width: 17em;
+ border: 3px solid #fcfcfc;
+ padding: 10px;
+ border-radius: 6px;
+}
+
+/*dialog to book more shows */
+.bookMoreShows{
+	top: 40%;
+	left: 10%;
+	position: static;
+	width: 288px;
+	border: 3px solid #fcfcfc;
+	padding: 1px;
+	border-radius: 6px;
+}
+
+.errorDialog {
+	position: static;
+	width: 700px;
+	border: 3px solid #fc2a2d;
+	padding: 1px;
+	border-radius: 6px;
+}
+
+.bookingComplete{
+	margin: 150px;
+	left: 50px;
+}
+
+
+
+
